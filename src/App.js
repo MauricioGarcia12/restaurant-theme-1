@@ -4,12 +4,14 @@ import {GlobalStyle} from './GlobalStyle'
 import { Hero } from './components/Hero/Hero';
 import Products from './components/Products/Products';
 import {productData} from './components/Products/Data'
+import Feature from './components/Feature/Feature';
 function App() {
   return (
     <Router>
       <GlobalStyle/>
         <Hero/>
         <Products heading='Choose your favorite' data={productData}/>
+        <Feature/>
     </Router>
   );
 }
